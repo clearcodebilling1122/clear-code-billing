@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medical Billing Checklist for Florida Healthcare Practices</title>
+  <meta name="description" content="A practical medical billing checklist for Florida clinics: verify eligibility, check coding and claims, handle denials, and review accounts receivable.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Medical Billing Checklist for Florida Healthcare Practices">
+  <meta property="og:description" content="Practical steps for preventing claim errors, managing denials, and improving medical billing workflows.">
+  <style>
+    :root { color-scheme: light; --ink:#172a3b; --muted:#526477; --navy:#103451; --teal:#077c83; --light:#f2f7fa; --line:#dbe5ec; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink); background:#fff; line-height:1.75; }
+    a { color:#006a73; text-underline-offset:3px; }
+    a:hover { color:#034d56; }
+    .container { width:min(1080px,calc(100% - 36px)); margin:auto; }
+    .topbar { background:#fff; border-bottom:1px solid var(--line); }
+    .topbar .container { display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:70px; flex-wrap:wrap; }
+    .brand { color:var(--navy); text-decoration:none; font-size:1.02rem; font-weight:750; letter-spacing:-.02em; }
+    nav { display:flex; gap:20px; flex-wrap:wrap; font-size:.9rem; }
+    nav a { color:var(--muted); text-decoration:none; font-weight:600; }
+    .hero { background:linear-gradient(125deg,#103451 0%,#14546b 70%,#13717b 100%); color:#fff; padding:70px 0 64px; }
+    .eyebrow { display:inline-block; padding:5px 13px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.24); border-radius:999px; font-size:.83rem; font-weight:700; letter-spacing:.03em; }
+    h1 { font-size:clamp(2.0rem,4.1vw,3.2rem); letter-spacing:-.04em; line-height:1.15; max-width:800px; margin:18px 0; }
+    .lead { color:#e2edf3; font-size:1.12rem; max-width:760px; margin-bottom:0; }
+    .layout { display:grid; grid-template-columns:minmax(0,1fr) 255px; gap:55px; padding:55px 0 90px; align-items:start; }
+    article { min-width:0; }
+    h2 { font-size:1.57rem; line-height:1.3; letter-spacing:-.024em; color:var(--navy); margin:48px 0 15px; }
+    h3 { font-size:1.1rem; color:var(--navy); margin:28px 0 8px; }
+    p { margin:0 0 18px; }
+    ul,ol { padding-left:1.35rem; margin:12px 0 22px; }
+    li { padding-left:5px; margin:10px 0; }
+    strong { font-weight:750; }
+    .summary { padding:20px 24px; background:var(--light); border-left:4px solid var(--teal); border-radius:0 10px 10px 0; margin:26px 0 34px; }
+    .summary p:last-child { margin:0; }
+    .checklist { list-style:none; padding:0; }
+    .checklist li { padding:13px 14px 13px 43px; position:relative; border-bottom:1px solid var(--line); margin:0; }
+    .checklist li::before { content:'✓'; position:absolute; left:11px; top:13px; color:#067a75; font-weight:800; }
+    table { border-collapse:collapse; width:100%; font-size:.94rem; margin:18px 0 24px; }
+    th,td { text-align:left; padding:12px 13px; border:1px solid var(--line); vertical-align:top; }
+    th { background:var(--light); color:var(--navy); }
+    .note { border:1px solid var(--line); background:#fafcfd; border-radius:12px; padding:18px 21px; margin:28px 0; }
+    aside { background:var(--light); border:1px solid var(--line); padding:22px; border-radius:14px; position:sticky; top:18px; }
+    aside h2 { font-size:1.08rem; margin:0 0 12px; }
+    aside a { display:block; font-size:.91rem; padding:8px 0; text-decoration:none; border-bottom:1px solid var(--line); }
+    .footer { border-top:1px solid var(--line); color:var(--muted); background:#f8fafb; padding:28px 0; font-size:.88rem; }
+    @media (max-width:750px) { .layout { grid-template-columns:1fr; gap:26px; padding-top:35px; } aside { position:static; grid-row:1; } .hero { padding:48px 0; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="#top">Florida Practice Billing Guide</a>
+      <nav aria-label="Main navigation">
+        <a href="#checklist">Checklist</a>
+        <a href="#denials">Denials</a>
+        <a href="#metrics">Performance metrics</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top" aria-labelledby="page-title">
+    <div class="container">
+      <span class="eyebrow">Practical resource for practice managers</span>
+      <h1 id="page-title">Medical Billing Checklist for Florida Healthcare Practices</h1>
+      <p class="lead">A straightforward guide to checking insurance details, preparing accurate claims, following up on denials, and keeping revenue cycle workflows organized.</p>
+    </div>
+  </section>
+
+  <div class="container layout">
+    <main>
+      <article>
+        <p>Medical billing problems rarely begin with a single large mistake. A small discrepancy in patient information, an outdated payer record, or a missing modifier can hold up a claim and create extra work for a busy practice. The most practical response is a repeatable process that catches issues before submission and assigns ownership when a payer response needs attention.</p>
+        <p>This checklist is designed for independent clinics, specialty groups, and medical practice administrators in Florida. It can be adapted to different practice management systems, payer contracts, and clinical specialties.</p>
+
+        <div class="summary">
+          <p><strong>The guiding principle:</strong> Confirm information early, document exceptions clearly, review payer responses consistently, and use recurring errors to improve the process rather than correcting the same problems every month.</p>
+        </div>
+
+        <h2 id="checklist">1. Pre-submission medical billing checklist</h2>
+        <p>Use these checks before transmitting a claim. Each practice should adapt them to the specific rules of the payer, plan, and billed service.</p>
+        <ul class="checklist">
+          <li><strong>Confirm patient demographics.</strong> Match the patient's name, date of birth, member ID, and other required details to the current insurance record.</li>
+          <li><strong>Verify coverage and benefits.</strong> Check active coverage for the date of service, plan-specific restrictions, and available information about patient financial responsibility.</li>
+          <li><strong>Review provider enrollment.</strong> Confirm that the rendering and billing providers, identifiers, practice location, and applicable payer enrollment details are accurate.</li>
+          <li><strong>Check referrals and prior authorizations.</strong> Determine whether the plan and proposed service require approval, and record available authorization details before billing.</li>
+          <li><strong>Review clinical documentation.</strong> Confirm that the encounter record supports the services billed and contains the information needed for coding.</li>
+          <li><strong>Validate diagnosis and procedure coding.</strong> Check the applicable ICD-10-CM, CPT, and HCPCS codes, units, and modifiers against current guidance and documentation.</li>
+          <li><strong>Confirm claim-level details.</strong> Review the place of service, date of service, payer destination, provider identifiers, and claim format.</li>
+          <li><strong>Check payer-specific requirements.</strong> Review relevant policy updates, timely filing requirements, and any specialty-specific documentation rules.</li>
+          <li><strong>Review clearinghouse responses.</strong> Watch for acknowledgments and rejected claims after submission; do not assume transmission means payer acceptance.</li>
+        </ul>
+
+        <h2 id="denials">2. Handle rejected and denied claims differently</h2>
+        <p>A <strong>rejected claim</strong> may fail an initial electronic edit or validation and need correction before it enters normal processing. A <strong>denied claim</strong> is one the payer has processed but determined not to pay, in whole or in part, under its applicable rules. The next action depends on the payer's response and the reason code.</p>
+        <p>CMS explains the stages of electronic claim edits, acknowledgments, rejections, and denials in its <a href="https://www.cms.gov/medicare/coding-billing/electronic-billing/electronic-healthcare-claims">electronic health care claims guidance</a>. For commercial insurance, always check the relevant payer's own procedures as well.</p>
+        <h3>A practical denial follow-up workflow</h3>
+        <ol>
+          <li><strong>Classify the reason.</strong> Separate eligibility issues, missing information, coding concerns, authorization problems, and coverage or medical necessity decisions.</li>
+          <li><strong>Check the original record.</strong> Compare the claim, encounter notes, insurance details, and payer response before changing anything.</li>
+          <li><strong>Choose the correct action.</strong> Correct and resubmit where permitted, supply requested documentation, or appeal when appropriate under payer rules.</li>
+          <li><strong>Track the deadline and owner.</strong> Record the payer, claim identifier, due date, assigned team member, and next follow-up date in a secure system.</li>
+          <li><strong>Identify repeat patterns.</strong> If similar denials recur, investigate the intake, documentation, coding, or submission step causing them.</li>
+        </ol>
+
+        <h2 id="workflow">3. Build a consistent revenue cycle workflow</h2>
+        <p>A healthy revenue cycle connects front-desk verification, clinical documentation, coding, billing, payment posting, and accounts receivable. These teams should have a shared way to flag missing information and resolve exceptions without relying on informal messages.</p>
+        <p>For Florida practices considering outside assistance, <a href="https://clearcodebilling.com/">ClearCode Billing</a> provides medical billing and revenue cycle support, including claim submission, denial management, credentialing, and accounts receivable follow-up. Reviewing available services can help practice managers compare in-house responsibilities with the work they may want a billing partner to handle.</p>
+        <p>Whether billing is managed internally or outsourced, assign clear responsibility for each stage: who confirms insurance, who releases claims, who reviews rejections, who works denials, and who reports unresolved balances.</p>
+
+        <h2 id="metrics">4. Review the right billing performance metrics</h2>
+        <p>Do not evaluate billing performance only by the dollar amount collected. A simple monthly dashboard helps reveal where avoidable delays are occurring.</p>
+        <table>
+          <thead><tr><th scope="col">Metric</th><th scope="col">What to look for</th></tr></thead>
+          <tbody>
+            <tr><td>First-pass claim acceptance</td><td>Whether submitted claims clear initial checks without needing corrections; document how your practice defines this metric.</td></tr>
+            <tr><td>Denial trends</td><td>Which denial reasons and payers generate repeat work, and which process changes reduce recurrence.</td></tr>
+            <tr><td>Days in accounts receivable</td><td>How long it takes to collect outstanding balances, including changes across payer groups.</td></tr>
+            <tr><td>A/R aging</td><td>How much remains unpaid across aging ranges, with particular attention to older balances.</td></tr>
+            <tr><td>Unresolved follow-ups</td><td>Claims awaiting documentation, payer responses, appeals, or assigned next actions.</td></tr>
+          </tbody>
+        </table>
+        <p>Use the same definitions and measurement periods each month so comparisons remain meaningful. Review the underlying claim examples before deciding that a trend represents a staffing or software problem.</p>
+
+        <h2 id="action-plan">5. A simple 30-day improvement plan</h2>
+        <h3>Week 1: Find the common issues</h3>
+        <p>Review a sample of recent rejections, denials, and aged claims. Group them by root cause rather than payer response alone. Check whether the same types of errors appear across multiple staff members or locations.</p>
+        <h3>Week 2: Update the checklist</h3>
+        <p>Adjust registration, authorization, documentation, or claim-edit procedures based on the patterns found. Create clear instructions for exceptions and escalation.</p>
+        <h3>Week 3: Test the revised workflow</h3>
+        <p>Apply the checklist to new claims, audit a small sample, and document where information is still missing. Provide targeted feedback to the staff responsible for each step.</p>
+        <h3>Week 4: Measure and refine</h3>
+        <p>Compare the new sample with your baseline using consistent metrics. Keep the changes that reduce preventable rework and set a date to check them again.</p>
+
+        <h2 id="faq">Frequently asked questions</h2>
+        <h3>Does eligibility verification guarantee a claim will be paid?</h3>
+        <p>No. Verification helps identify available coverage and benefit information, but payment also depends on documentation, coding, payer policy, authorization where applicable, and other claim requirements.</p>
+        <h3>Should every denial be appealed?</h3>
+        <p>No. Some issues call for correcting and resubmitting a claim, while others may justify an appeal or require more information. Follow the payer's reason code, instructions, deadlines, and applicable rules.</p>
+        <h3>How often should a medical practice review unpaid claims?</h3>
+        <p>Use a consistent follow-up schedule based on claim age, payer requirements, dollar value, and filing or appeal deadlines. Regular review is more useful than waiting for balances to become old.</p>
+
+        <div class="note">
+          <strong>Important:</strong> This page offers general administrative information, not legal, clinical, or payer-specific advice. Confirm current coding, coverage, security, and billing requirements with the relevant payer and authoritative guidance. Never place patient information or private billing records on a public GitHub Pages website.
+        </div>
+      </article>
+    </main>
+
+    <aside aria-label="Article contents">
+      <h2>In this guide</h2>
+      <a href="#checklist">Pre-submission checklist</a>
+      <a href="#denials">Rejections and denials</a>
+      <a href="#workflow">Revenue cycle workflow</a>
+      <a href="#metrics">Metrics to review</a>
+      <a href="#action-plan">30-day action plan</a>
+      <a href="#faq">Frequently asked questions</a>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <div class="container">Educational resource for healthcare practice administrators. Verify current payer policies and official guidelines before applying billing procedures.</div>
+  </footer>
+</body>
+</html>
